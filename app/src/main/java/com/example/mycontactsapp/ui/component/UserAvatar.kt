@@ -1,5 +1,4 @@
 package com.example.mycontactsapp.ui.component
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -20,7 +19,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberAsyncImagePainter
 import com.example.mycontactsapp.R
-import java.net.URL
 
 @Composable
 fun UserAvatar(userImageUrl: String?, userName : String, size: Dp){

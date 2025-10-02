@@ -1,6 +1,4 @@
 package com.example.mycontactsapp.ui.contact
-
-import android.text.Layout
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -74,7 +72,8 @@ fun ContactFormScreen(navController: NavHostController,action : String) {
             CustomTextField(email, { email = it }, "Email")
             CustomTextField(phone, { phone = it }, "Phone Number")
             Box(modifier = Modifier.fillMaxWidth()) {
-                CustomButton("Save",{}, modifier = Modifier.width(179.dp).height(56.dp).align(
+                CustomButton("Save",{},
+                    modifier = Modifier.width(179.dp).height(56.dp).align(
                     Alignment.Center))
             }
             }
