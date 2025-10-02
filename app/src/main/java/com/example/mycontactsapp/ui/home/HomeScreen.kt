@@ -1,6 +1,7 @@
 package com.example.mycontactsapp.ui.home
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -45,6 +46,7 @@ fun HomeScreen(navController: NavHostController){
     var userUrl by remember { mutableStateOf("") }
     var userName by remember { mutableStateOf("Rinsha") }
     Scaffold(
+        contentColor = Color.White,
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {
@@ -64,11 +66,13 @@ fun HomeScreen(navController: NavHostController){
         }
     ) { innerPadding ->
         Column(
-            modifier = Modifier.fillMaxSize().padding(innerPadding)
+            modifier = Modifier.fillMaxSize().background(Color.White)
         ) {
             AppBar(userName,userUrl)
-            SearchBox()
-            ContactList(navController)
+            Column(modifier = Modifier.padding(innerPadding)) {
+                SearchBox()
+                ContactList(navController)
+            }
         }
     }
 }

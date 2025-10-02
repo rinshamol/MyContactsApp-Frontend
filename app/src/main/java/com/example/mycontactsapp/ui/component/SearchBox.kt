@@ -29,7 +29,7 @@ fun SearchBox(){
         tonalElevation = 6.dp, // background tint + elevation
         shadowElevation = 6.dp,
         color = Color(0xFFF4E9D3),
-        modifier = Modifier.height(53.dp)
+        modifier = Modifier.height(56.dp)
             .padding(horizontal = 16.dp)
     ) {
         TextField(
@@ -48,7 +48,7 @@ fun SearchBox(){
                     tint = Color.Gray
                 )
             },
-            singleLine = true,
+          //  singleLine = true,
             modifier = Modifier.fillMaxWidth().height(53.dp)
                 .padding(horizontal = 16.dp)
                 .background(Color(0xFFF4E9D3), RoundedCornerShape(30.dp)),
@@ -61,7 +61,8 @@ fun SearchBox(){
                 focusedIndicatorColor = Color.Transparent,
                 unfocusedIndicatorColor = Color.Transparent,
                 disabledIndicatorColor = Color.Transparent,
-                cursorColor = Color.Gray
+                cursorColor = Color.Gray,
+                focusedTextColor = Color.Black
             ),
 
             )

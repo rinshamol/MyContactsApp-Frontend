@@ -33,11 +33,12 @@ fun CustomTextField(
         colors = TextFieldDefaults.colors(
             focusedIndicatorColor = Color(0xFFDEC698),
             unfocusedIndicatorColor = Color(0xFFDEC698),
-            disabledIndicatorColor = Color.LightGray,
+            disabledIndicatorColor = Color.Black,
             focusedContainerColor = Color.White,
             unfocusedContainerColor = Color.White,
             disabledContainerColor = Color.White,
-            cursorColor = Color.Black
+            cursorColor = Color.Black,
+            focusedTextColor = Color.Black
         )
     )
 }
